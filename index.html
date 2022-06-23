@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexbox 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        .container {
+            margin-bottom: 20px;
+            background: #0d6fd0;
+            color: #fff;
+        }
+
+        .container>div {
+            background: rgba(255, 255, 255, .2);
+            padding: 15px;
+            border: 1px solid #0d6fd0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="row mx-5">
+            <div class="col">
+                <h4>Tipos de Display flex</h4>
+                <hr>
+
+                <!--
+                    Podemos establecer que tipo de elemento flexbox sera, de tipo block o inline.
+                    y podemos establecer tambien desde que dispositivo lo sera.
+                    .d-flex
+                    .d-inline-flex
+
+                    .d-sm-flex
+                    .d-sm-inline-flex
+                    .d-md-flex
+                    .d-md-inline-flex
+                    .d-lg-flex
+                    .d-lg-inline-flex
+                    .d-xl-flex
+                    .d-xl-inline-flex
+
+                -->
+                <div class="bg-primary text-white p-3 d-flex">
+                    <p class="mb-0">Display flex <strong>.d-flex</strong></p>
+                </div>
+                <br>
+                <div class="bg-primary text-white p-3 d-inline-flex">
+                    <p class="mb-0">Display inline flex <strong>.d-inline-flex</strong></p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="row mx-5">
+        <div class="col">
+            <h4>Direccion</h4>
+            <hr>
+
+            <!-- Variantes
+                .flex-row
+                .flex-row-reverse
+
+                .flex-column
+                .flex-column-reverse
+
+                sm/ md / lg / xl /xxl
+                .flex-*-row
+                .flex-*-row-reverse
+                .flex-*-column
+                .flex-*-column-reverse
+
+
+            -->
+
+            <p>.flex-row</p>
+
+            <div>
+                <div class="container d-flex flex-row">
+
+                    <div>caja1</div>
+                    <div>caja2</div>
+                    <div>caja3</div>
+
+                </div>
+
+                <p>.flex-row-reverse</p>
+
+                <div>
+                    <div class="container d-flex flex-row-reverse">
+
+                        <div>caja1</div>
+                        <div>caja2</div>
+                        <div>caja3</div>
+
+                    </div>
+
+                </div>
+
+                <p>.flex-column</p>
+
+                <div>
+                    <div class="container d-flex flex-column">
+
+                        <div>caja1</div>
+                        <div>caja2</div>
+                        <div>caja3</div>
+
+                    </div>
+
+                    <p>.flex-column-reverse</p>
+
+                    <div>
+                        <div class="container d-flex flex-column-reverse">
+
+                            <div>caja1</div>
+                            <div>caja2</div>
+                            <div>caja3</div>
+
+                        </div>
+
+                    </div>
+
+
+               
+               
+               
+               
+               
+                </div>
+
+
+                
+                <div class="row my-5">
+                    <div class="col">
+                        <h4>Justify content</h4>
+                        <hr>
+
+                        <!-- Variantes:
+                            .justify-content-start
+                            .justify-content-end
+                            .justify-content-center
+                            .justify-content-between
+                            .justify-content-around
+
+                            sm / md / lg / xl / xxl
+                            .justify-content-*-start
+                            .justify-content-*-end
+                            .justify-content-*-center
+                            .justify-content-*-between
+                            .justify-content-*-around
+
+                        -->
+
+                        <p>.Justify-content-start</p>
+                        <div class="container d-flex Justify-content-start">
+                            <div>caja1</div>
+                            <div>caja2</div>
+                            <div>caja3</div>
+                        </div>
+
+                        <p>.Justify-content-center</p>
+                        <div class="container d-flex Justify-content-center">
+                            <div>caja1</div>
+                            <div>caja2</div>
+                            <div>caja3</div>
+                        </div>
+
+                        <p>.Justify-content-end</p>
+                        <div class="container d-flex Justify-content-end">
+                            <div>caja1</div>
+                            <div>caja2</div>
+                            <div>caja3</div>
+                        </div>
+
+                        
+                        <p>.Justify-content-between</p>
+                        <div class="container d-flex Justify-content-between">
+                            <div>caja1</div>
+                            <div>caja2</div>
+                            <div>caja3</div>
+                        </div>
+
+                        
+                        <p>.Justify-content-around</p>
+                        <div class="container d-flex Justify-content-around">
+                            <div>caja1</div>
+                            <div>caja2</div>
+                            <div>caja3</div>
+                        </div>
+
+                        <p>.Justify-content-evenly</p>
+                        <div class="container d-flex Justify-content-evenly">
+                            <div>caja1</div>
+                            <div>caja2</div>
+                            <div>caja3</div>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+
+                
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+crossorigin="anonymous"></script>
+
+
+
+
+
+</body>
+
+</html>
